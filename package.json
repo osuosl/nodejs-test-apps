@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-test-apps",
+  "version": "0.0.1",
+  "description": "test app",
+  "main": "run.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osuosl/nodejs-test-apps.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/osuosl/nodejs-test-apps/issues"
+  },
+  "homepage": "https://github.com/osuosl/nodejs-test-apps#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}

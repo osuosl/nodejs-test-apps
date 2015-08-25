@@ -1,11 +1,13 @@
-var http = require('http');
+var express = require('express');
+var app = express();
 
-function onRequest(request, response) {
-  console.log('Success!');
-  response.writeHead(200, {'Content-Type': 'text/plain'});
-  response.write('Success!');
-  response.end();
-}
+app.get('/', function (req, res) {
+  console.log('Express Success!');
+  res.send('Express Success!');
+});
 
-console.log('starting server on port 8888');
-http.createServer(onRequest).listen(8888);
+var server = app.listen(3000, function () {
+  var port = server.address().port;
+
+  console.log('Express app listening on port %s', port);
+});
